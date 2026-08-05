@@ -242,7 +242,7 @@ export const projects = [
     description:
       "Designed and built an end-to-end Organic marketplace connecting consumers directly with source farmers. Implemented seamlessly responsive, interactive frontend layouts prioritizing modern UI/UX design patterns to maximize visual fidelity and overall client retention.",
     techTags: ["MongoDB", "Express", "React", "Node.js", "REST APIs", "Tailwind CSS"],
-    image: "/assets/img/image copy 2.png",
+    image: "/assets/img/onekart.png",
     links: {
       github: "https://github.com/Devaraju89",
       demo: "https://onekart-devaraju.vercel.app/",
