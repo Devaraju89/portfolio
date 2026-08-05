@@ -23,7 +23,7 @@ export const personalInfo = {
     "Frontend Craftsman",
     "Creative Problem Solver"
   ],
-  resumeUrl: "https://drive.google.com/file/d/16wp79DF-IcH5GykyokuTa3zTCu2UiPNZ/view?usp=drive_link",
+  resumeUrl: "/assets/docs/RangappaGariDevaraju_CV_2026.pdf",
 };
 
 export const socialLinks = {
@@ -43,7 +43,7 @@ export const heroContent = {
     text: "Contact Me",
     href: "mailto:devarajkuruba18@gmail.com?subject=Hiring Inquiry – Portfolio&body=Hello Devaraju,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
   },
-  ctaResume: { text: "Download CV", href: "https://drive.google.com/file/d/16wp79DF-IcH5GykyokuTa3zTCu2UiPNZ/view?usp=drive_link" },
+  ctaResume: { text: "Download CV", href: "/assets/docs/RangappaGariDevaraju_CV_2026.pdf" },
 };
 
 export const aboutContent = {
@@ -268,7 +268,7 @@ export const projects = [
     id: "ai-travel",
     number: "03",
     badge: "May 2025",
-    title: "AI-Travel-Management Platform",
+    title: "TravelMate – AI Travel Management Platform",
     description:
       "Architected a comprehensive travel platform connecting tourists with verified local guides. Designed clean, highly responsive user interfaces using Blade templates and CSS — ensuring smooth navigation and an intuitive browsing experience across all devices with a seamless automated booking experience.",
     techTags: [
@@ -279,7 +279,7 @@ export const projects = [
       "REST APIs",
       "Responsive UI"
     ],
-    image: "/assets/img/image copy 3.png",
+    image: "/assets/img/travelmate.png",
     links: {
       github: "https://github.com/Devaraju89/AI-Travel-Management-Platform-",
       demo: "https://travelmate-ai-zbq9.onrender.com/",

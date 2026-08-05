@@ -32,13 +32,13 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative w-full h-screen overflow-hidden bg-black">
-      {/* Background Video with object-[center_top] so head is NEVER cut off */}
+      {/* Background Video shifted rightwards so face never overlaps left text */}
       <video
         ref={videoRef}
         loop
         muted={isMuted}
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover object-[center_top] z-0"
+        className="absolute top-0 left-0 w-full h-full object-cover object-[75%_top] md:object-[70%_top] z-0"
       >
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
@@ -135,6 +135,7 @@ const Hero = () => {
             {/* Resume Download Button */}
             <a 
               href={heroContent.ctaResume.href}
+              download="Rangappa_Gari_Devaraju_CV_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2.5 md:px-6 md:py-3 text-xs md:text-sm rounded-full bg-black/60 border border-white/60 text-white font-bold hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-md flex items-center gap-2 shadow-lg"
