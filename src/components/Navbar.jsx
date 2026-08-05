@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Handle scroll to make navbar more solid
+  // Handle scroll to make navbar background solid
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -18,9 +18,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Certifications', 'Contact'];
 
-  const hireMeMailto = `mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Md Yusuf,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
+  const hireMeMailto = `mailto:${personalInfo.emails.primary}?subject=Hiring Inquiry – Portfolio&body=Hello ${personalInfo.firstName},%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`;
 
   return (
     <nav 
@@ -28,30 +28,33 @@ const Navbar = () => {
         isOpen 
           ? 'bg-[#ff2a2a] py-4'
           : isScrolled 
-            ? 'bg-transparent py-4' 
-            : 'bg-transparent py-6'
+            ? 'bg-black/90 backdrop-blur-md py-4 shadow-2xl border-b border-white/10' 
+            : 'bg-gradient-to-b from-black/90 via-black/50 to-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         
-        {/* Left Side: Logo/Name */}
+        {/* Left Side: Logo/Monogram */}
         <div className="flex items-center">
-          <a href="#" className="text-white text-2xl font-black tracking-tight whitespace-nowrap">
-            {personalInfo.brandName}<span className="text-red-500">.</span>
+          <a href="#" className="text-white text-2xl font-black tracking-tight whitespace-nowrap flex items-center gap-2.5 group">
+            <span className="w-10 h-10 rounded-full bg-[#ff2a2a] text-white flex items-center justify-center font-black text-sm border border-white/30 shadow-[0_0_15px_rgba(255,42,42,0.5)] group-hover:scale-110 transition-transform">
+              {personalInfo.brandName}
+            </span>
+            <span className="hidden sm:inline text-lg font-extrabold text-white tracking-wide">{personalInfo.firstName}</span>
           </a>
         </div>
 
-        {/* Center: Desktop Menu Links */}
-        <div className="hidden md:flex space-x-8">
+        {/* Center: Desktop Menu Links inside Glassmorphism Pill */}
+        <div className="hidden md:flex items-center space-x-6 lg:space-x-8 px-6 py-2 rounded-full bg-black/40 border border-white/15 backdrop-blur-md shadow-lg">
           {navLinks.map((link) => (
             <a 
               key={link} 
               href={`#${link.toLowerCase()}`}
-              className="text-white/80 hover:text-white font-medium relative group transition-colors duration-300"
+              className="text-white/90 hover:text-white font-bold text-sm tracking-wide relative group transition-colors duration-300 drop-shadow-md"
             >
               {link}
               {/* Smooth hover underline */}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff2a2a] transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
         </div>
@@ -60,8 +63,11 @@ const Navbar = () => {
         <div className="hidden md:block">
           <a 
             href={hireMeMailto}
-            className="px-6 py-2.5 rounded-full bg-white/10 border border-white/20 text-white font-semibold hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-all duration-300 backdrop-blur-md"
+            className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#ff2a2a] border border-red-400/50 text-white font-black text-sm hover:bg-white hover:text-black hover:shadow-[0_0_20px_rgba(255,42,42,0.6)] transition-all duration-300 backdrop-blur-md shadow-md"
           >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
             Hire Me
           </a>
         </div>
@@ -70,7 +76,7 @@ const Navbar = () => {
         <div className="md:hidden flex items-center">
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white focus:outline-none p-2"
+            className="text-white focus:outline-none p-2 bg-black/40 rounded-full border border-white/20"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isOpen ? (
@@ -104,8 +110,11 @@ const Navbar = () => {
              <a 
                href={hireMeMailto}
                onClick={() => setIsOpen(false)} 
-               className="inline-block px-6 py-3 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg"
+               className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white text-[#ff2a2a] font-black hover:bg-black hover:text-white transition-colors w-full text-center shadow-lg"
              >
+               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+               </svg>
                Hire Me
              </a>
           </div>

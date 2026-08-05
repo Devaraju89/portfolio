@@ -1,75 +1,82 @@
 // ============================================================
-// portfolioData.js — Centralized configuration for Md Yusuf's Portfolio
+// portfolioData.js — Centralized configuration for Rangappa Gari Devaraju's Portfolio
 // All external links, personal info, and content in one place.
-// Update this file to change any content across the entire site.
 // ============================================================
 
 export const personalInfo = {
-  name: "Md Yusuf",
-  firstName: "Md Yusuf",
-  brandName: "Md Yusuf",
-  title: "Full Stack & Java Developer",
-  location: "Bhopal, India",
-  phone: "+91 99396-08743",
+  name: "Rangappa Gari Devaraju",
+  firstName: "Devaraju",
+  brandName: "RD",
+  fullNameBrand: "Rangappa Gari Devaraju",
+  title: "UI/UX Designer",
+  badge: "Open for UI/UX Internship",
+  location: "Lovely Professional University, Punjab, India",
+  phone: "+91 6301553175",
   emails: {
-    primary: "mdyusufcse096@iesuniversity.ac.in",
-    secondary: "yusuf.rgpv@gmail.com",
+    primary: "devarajkuruba18@gmail.com",
   },
   summary:
-    "Aspiring software engineer and motivated B.Tech Computer Science student with solid skills in Java, Spring Boot, React, and Python. Passionate about building scalable full-stack applications with clean architecture and modern tech stacks.",
-  resumeUrl: "/Md_Yusuf_Resume_2026.pdf",
+    "Crafting intuitive, user-centered digital experiences through design thinking, responsive interfaces, and a passion for visual storytelling.",
+  typewriterWords: [
+    "UI/UX Designer",
+    "Design Thinker",
+    "Frontend Craftsman",
+    "Creative Problem Solver"
+  ],
+  resumeUrl: "https://drive.google.com/file/d/16wp79DF-IcH5GykyokuTa3zTCu2UiPNZ/view?usp=drive_link",
 };
 
 export const socialLinks = {
-  github: "https://github.com/mdyusuf0",
-  linkedin: "https://linkedin.com/in/mdyusuf0",
-  instagram: "https://instagram.com/heyyusuffff",
+  github: "https://github.com/Devaraju89",
+  linkedin: "https://www.linkedin.com/in/devaraju18/",
+  instagram: "https://github.com/Devaraju89",
+  portfolioRepo: "https://github.com/Devaraju89/portfolio"
 };
 
 export const heroContent = {
-  greeting: "Hi, I'm Md Yusuf",
-  titleHighlight: "Full Stack & Java Developer",
+  greeting: "Hi, I'm DEVARAJU",
+  titleHighlight: "UI/UX Designer",
   subtitle:
-    "I build fast, scalable applications using Java, Spring Boot, MERN Stack, and Python.",
+    "Crafting intuitive, user-centered digital experiences through design thinking, responsive interfaces, and visual storytelling.",
   ctaPrimary: { text: "View My Work", href: "#projects" },
   ctaSecondary: {
     text: "Contact Me",
-    href: "mailto:mdyusufcse096@iesuniversity.ac.in?subject=Hiring Inquiry – Portfolio&body=Hello Md Yusuf,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
+    href: "mailto:devarajkuruba18@gmail.com?subject=Hiring Inquiry – Portfolio&body=Hello Devaraju,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
   },
-  ctaResume: { text: "Download Resume", href: "/Md_Yusuf_Resume_2026.pdf" },
+  ctaResume: { text: "Download CV", href: "https://drive.google.com/file/d/16wp79DF-IcH5GykyokuTa3zTCu2UiPNZ/view?usp=drive_link" },
 };
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Md Yusuf</span>, an aspiring software engineer based in Bhopal, India, dedicated to crafting clean, functional, and highly scalable full-stack applications.`,
-  techStack: ["Java", "Spring Boot", "MERN Stack"],
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Rangappa Gari Devaraju</span>, a 4th-year B.Tech CSE student at Lovely Professional University and passionate UI/UX Designer dedicated to crafting clean, intuitive, and highly responsive user interfaces through modern design thinking.`,
+  techStack: ["Figma", "React.js", "Tailwind CSS", "Design Thinking"],
 };
 
 export const skillsContent = {
-  badge: "My Process",
-  heading: "Here's how I turn ideas into real-world applications",
+  badge: "My Design & Dev Process",
+  heading: "How I craft intuitive digital experiences",
   description:
-    "I follow a structured, creative, and highly technical approach to turn ideas into robust full-stack applications.",
+    "I follow a structured, user-centered approach to turn complex ideas into beautiful, seamless user interfaces.",
   cards: [
     {
       number: "01",
       title: "Research",
-      text: "I start by understanding goals, user requirements, and technical constraints to lay a rock-solid foundation for the project.",
+      text: "Empathizing with users, analyzing requirements, building user personas, and defining information architecture.",
     },
     {
       number: "02",
       title: "Design",
-      text: "Crafting clean architecture, intuitive interfaces, and pixel-perfect wireframes that guarantee an engaging and accessible user experience.",
+      text: "Crafting wireframes, interactive prototypes, and pixel-perfect UI systems in Figma with modern UX patterns.",
     },
     {
       number: "03",
       title: "Develop",
-      text: "Building scalable backends and responsive frontends using modern tech stacks and best practices.",
+      text: "Building responsive layouts and interactive components using React.js, Tailwind CSS, HTML5, and JavaScript.",
     },
     {
       number: "04",
-      title: "Deploy",
-      text: "Rigorous testing, performance optimization, and seamless deployment to cloud infrastructure, followed by ongoing support.",
+      title: "Ship & Iterate",
+      text: "Usability testing, refining micro-animations, performance optimization, and continuous deployment.",
     },
   ],
   endText: "Ready to ship!",
@@ -79,218 +86,203 @@ export const skillsContent = {
 export const technicalSkills = {
   categories: [
     {
+      title: "UX & Research",
+      skills: [
+        { name: "User Research & Analysis", level: 90 },
+        { name: "Design Thinking", level: 92 },
+        { name: "Information Architecture", level: 88 },
+        { name: "User Flows & Wireframing", level: 95 },
+        { name: "Usability Testing", level: 85 }
+      ]
+    },
+    {
+      title: "Design Tools",
+      skills: [
+        { name: "Figma", level: 95 },
+        { name: "Wireframing & Prototyping", level: 92 },
+        { name: "UI Mockups & Design Systems", level: 90 },
+        { name: "Canva", level: 88 }
+      ]
+    },
+    {
+      title: "Frontend & UI",
+      skills: [
+        { name: "HTML5 & CSS3", level: 95 },
+        { name: "Tailwind CSS", level: 90 },
+        { name: "React.js", level: 85 },
+        { name: "Responsive Web Design", level: 92 },
+        { name: "Blade Templates", level: 80 }
+      ]
+    },
+    {
+      title: "Development & Ops",
+      skills: [
+        { name: "JavaScript (ES6+)", level: 88 },
+        { name: "REST APIs", level: 85 },
+        { name: "Node.js & Express", level: 78 },
+        { name: "MongoDB & MySQL", level: 80 },
+        { name: "Git & GitHub", level: 88 },
+        { name: "Vercel & Render", level: 90 }
+      ]
+    },
+    {
       title: "Programming Languages",
       skills: [
-        { name: "Java", level: 90 },
-        { name: "C++", level: 85 },
-        { name: "Python", level: 75 }
+        { name: "C & C++", level: 85 },
+        { name: "Data Structures & Algorithms", level: 82 },
+        { name: "PHP & Laravel", level: 78 }
       ]
     },
     {
-      title: "Full Stack",
+      title: "Core CS Concepts",
       skills: [
-        { name: "MERN Stack", level: 90 },
-        { name: "HTML", level: 95 },
-        { name: "CSS", level: 90 },
-        { name: "JavaScript", level: 92 }
-      ]
-    },
-    {
-      title: "Backend",
-      skills: [
-        { name: "Spring Boot", level: 88 },
-        { name: "FastAPI", level: 75 },
-        { name: "REST APIs", level: 90 }
-      ]
-    },
-    {
-      title: "Databases",
-      skills: [
-        { name: "MongoDB", level: 88 },
-        { name: "MySQL", level: 85 },
-        { name: "Firebase", level: 80 }
-      ]
-    },
-    {
-      title: "Tools & Automation",
-      skills: [
-        { name: "Git & GitHub", level: 90 },
-        { name: "VS Code", level: 95 },
-        { name: "Postman", level: 88 },
-        { name: "n8n", level: 82 },
-        { name: "MongoDB Compass", level: 85 },
-        { name: "Antigravity", level: 80 },
-        { name: "Codex", level: 75 }
-      ]
-    },
-    {
-      title: "Computer Science Concepts",
-      skills: [
-        { name: "Data Structures", level: 88 },
-        { name: "Algorithms", level: 85 },
-        { name: "DBMS", level: 86 },
-        { name: "OOP", level: 90 },
-        { name: "Software Engineering", level: 84 }
+        { name: "Object Oriented Programming", level: 88 },
+        { name: "Competitive Programming", level: 80 },
+        { name: "Database Management (DBMS)", level: 82 },
+        { name: "Computer Communications", level: 85 }
       ]
     }
   ]
 };
 
-// Brand New Content Creation Data
+// Brand New Design & Content Creation Data
 export const contentCreation = {
-  badge: "Cinematic Content",
-  heading: "Creative Direction & Cinematic Edits",
-  description: "Beyond coding, I craft visual stories with premium editing, color grading, and creative pacing.",
+  badge: "Visual & UX Craft",
+  heading: "UI/UX Design Systems & Creative Concepts",
+  description: "Blending user empathy with modern aesthetics, interactive prototypes, and visual storytelling.",
   categories: [
     {
-      title: "Cinematic Reels",
-      description: "Visual stories crafted with cinematic lighting, premium color grading, and high-impact sound design.",
-      stats: "50+ Reels Created",
-      icon: "🎥"
+      title: "E-Commerce & Marketplaces",
+      description: "User journeys, checkout flows, and product discovery interfaces for platforms like OneKart.",
+      stats: "Interactive Mockups",
+      icon: "🛒"
     },
     {
-      title: "Travel Videos",
-      description: "Immersive travel vlogs and aesthetic edits capturing cultures, landscapes, and visual rhythms.",
-      stats: "15+ Countries/Cities",
-      icon: "✈️"
-    },
-    {
-      title: "Educational Reels",
-      description: "Fast-paced tech tutorials and educational content designed to simplify coding and software engineering.",
-      stats: "100k+ Views",
+      title: "Conversational UI & Healthcare",
+      description: "Calming interfaces, mood-tracking visualizations, and accessible UX for AI assistants.",
+      stats: "Accessible UX",
       icon: "🧠"
     },
     {
-      title: "My Own Creative Edits",
-      description: "Experimental transitions, 3D overlays, and trendsetting visual effects that push creative bounds.",
-      stats: "Personal Projects",
-      icon: "⚡"
+      title: "Travel & Booking Platforms",
+      description: "Seamless itinerary planners and automated booking flows designed for cross-device responsiveness.",
+      stats: "Cross-Device Flow",
+      icon: "✈️"
+    },
+    {
+      title: "EdTech & Interactive Apps",
+      description: "Quiz interfaces, custom theme systems, and engaging micro-animations for smart learning.",
+      stats: "Micro-UX & Animations",
+      icon: "🎓"
     }
   ]
 };
 
-// Brand New Leadership Data
+// Leadership & Achievements Data
 export const leadershipList = [
   {
-    title: "IEEE Madhya Pradesh Section (Social Media Team)",
-    description: "Managed and coordinated digital content, driving audience engagement and designing interactive visual campaigns for tech events.",
-    role: "Social Media Coordinator",
-    badge: "Volunteer"
+    title: "CODE OFF DUTY — Web Hackathon",
+    description: "Round 2 Qualifier — Spearheaded development of a functional web prototype, integrating 5 unique features under strict competition constraints and tight deadlines.",
+    role: "Round 2 Qualifier · March 2025",
+    badge: "Hackathon"
   },
   {
-    title: "Team Coordinator – Go-Kart International Racing 2K25",
-    description: "Led multi-disciplinary teams in project management, budget control, and logistics coordination for a high-profile international racing event.",
-    role: "Team Coordinator",
-    badge: "Leadership"
-  },
-  {
-    title: "5-Day MOE IDE Bootcamp, Roorkee",
-    description: "Participated in an intensive Innovation, Design, and Entrepreneurship Bootcamp organized by the Ministry of Education at IIT Roorkee.",
-    role: "Bootcamp Graduate",
-    badge: "Innovation"
-  },
-  {
-    title: "Hosted INFORIA Tech Summit Hackathon",
-    description: "Organized and hosted the flagship hackathon, managing registrations, mentoring participant teams, and coordinating judge evaluations.",
-    role: "Hackathon Organizer",
-    badge: "Co-Curricular"
-  },
-  {
-    title: "Event Coordinator & Anchoring – INFORIA 2K25",
-    description: "Coordinated technical events and served as the main stage anchor, speaking in front of large crowds and managing the summit flow.",
-    role: "Stage Anchor & Coordinator",
-    badge: "Public Speaking"
+    title: "Competitive Programming",
+    description: "Solved 100+ Data Structures and Algorithms problems on various platforms focusing on arrays, linked lists, stacks, queues, and dynamic programming.",
+    role: "100+ Problems Solved · March 2026",
+    badge: "Achievement"
   }
 ];
 
-// Brand New Internships Data
+// Internships / Training Data
 export const internshipsList = [
   {
-    organization: "Netlink, Bhopal",
-    role: "Data Analytics & BI Tools Intern",
-    duration: "June 2025 - August 2025",
-    skills: ["Data Analytics", "Business Intelligence", "Dashboard Design", "Data Modeling"],
-    tech: ["Lumenore", "MySQL", "Excel", "BI Tools"]
+    organization: "Cognifyz Technologies",
+    role: "Full Stack Developer Intern",
+    duration: "1 Month",
+    skills: [
+      "Full Stack Web Development & UI/UX Architecture",
+      "Collaborative Project Planning & Implementation",
+      "Frontend & Backend Integration with REST APIs",
+      "Responsive UI Design & Modern Web Workflows"
+    ],
+    tech: ["React.js", "Node.js", "Express", "HTML5/CSS3", "JavaScript", "REST APIs"]
   },
   {
-    organization: "Canva",
-    role: "Visual Content Creator & Designer",
-    duration: "May 2024 - June 2024",
-    skills: ["Visual Designing", "Poster Design", "Team Branding", "Asset Creation"],
-    tech: ["Canva Pro", "Figma", "Canva Design Suite"]
-  },
-  {
-    organization: "CollegeTips.in",
-    role: "Web Development Intern",
-    duration: "1 Month (Offline)",
-    skills: ["Frontend Development", "Responsive Layouts", "API Testing", "Web Performance"],
-    tech: ["HTML5", "CSS3", "JavaScript", "Bootstrap"]
+    organization: "Board Infinity",
+    role: "Data Structures & Algorithms Trainee",
+    duration: "July 2025",
+    skills: [
+      "Core Data Structures & Algorithms in C++",
+      "Arrays, Linked-Lists, Stacks, Queues, Trees",
+      "Sorting Techniques & Clean Modular Code"
+    ],
+    tech: ["C++", "DSA", "Problem Solving", "Clean Code"]
   }
 ];
 
-// Brand New Soft Skills Data
+// Soft Skills Data
 export const softSkillsList = [
-  { name: "Leadership", icon: "👑", desc: "Guiding teams, managing tasks, and driving project completion with shared vision." },
-  { name: "Public Speaking", icon: "🎤", desc: "Confident stage presence, anchoring summits, and delivering articulate technical ideas." },
-  { name: "Team Collaboration", icon: "🤝", desc: "Collaborating across fields, building racing carts, and engineering code in sync." },
-  { name: "Communication", icon: "💬", desc: "Clear, concise, and structured interactions in both business and technical contexts." },
-  { name: "Problem Solving", icon: "🧩", desc: "Breaking down complex engineering tasks into clean, logical, and modular pieces." },
-  { name: "Adaptability", icon: "🌟", desc: "Quick to pick up new frameworks like FastAPI, Spring Boot, or automation tools like n8n." },
-  { name: "Creativity", icon: "🎨", desc: "Blending cinematic aesthetics with software structure to build premium experiences." },
-  { name: "Time Management", icon: "⏰", desc: "Balancing B.Tech studies, event hosting, and developing robust software platforms." }
+  { name: "Problem Solving", icon: "🧩", desc: "Breaking down complex user and technical problems into clean, modular solutions." },
+  { name: "Team Collaboration", icon: "🤝", desc: "Working seamlessly in multi-disciplinary teams under hackathon deadlines." },
+  { name: "Design Thinking", icon: "💡", desc: "Empathizing with users to build intuitive, accessible visual interfaces." },
+  { name: "Adaptability", icon: "🌟", desc: "Quick to pick up new frameworks, design tools, and frontend stacks." },
+  { name: "Resilience", icon: "⚡", desc: "Overcoming technical obstacles with persistence and attention to detail." },
+  { name: "Effective Communication", icon: "💬", desc: "Translating user requirements into clear design decisions and code." },
+  { name: "Visual Storytelling", icon: "🎨", desc: "Utilizing colors, typography, and visual hierarchy to guide user actions." },
+  { name: "Time Management", icon: "⏰", desc: "Balancing B.Tech studies with design projects and hackathon builds." }
 ];
 
 export const projects = [
   {
-    id: "foodmesh",
+    id: "onekart",
     number: "01",
-    badge: "🚀 Flagship Project",
-    title: "FoodMesh",
+    badge: "⭐ FEATURED · Oct 2025",
+    title: "OneKart – Organic Marketplace",
     description:
-      "FoodMesh — An enterprise-grade multi-tenant restaurant management and food ordering SaaS platform inspired by UrbanPiper. It enables restaurants to manage multiple outlets, menus, inventory, customers, staff, and orders through a scalable architecture with secure authentication, role-based access control, and real-time operations. Built with React, Next.js, NestJS, PostgreSQL, Redis, Kafka, Elasticsearch, Docker, Kubernetes, and AWS.",
-    techTags: [
-      "React",
-      "Next.js",
-      "NestJS",
-      "PostgreSQL",
-      "Redis",
-      "Kafka",
-      "Elasticsearch",
-      "Docker",
-      "Kubernetes",
-      "AWS",
-    ],
+      "Designed and built an end-to-end Organic marketplace connecting consumers directly with source farmers. Implemented seamlessly responsive, interactive frontend layouts prioritizing modern UI/UX design patterns to maximize visual fidelity and overall client retention.",
+    techTags: ["MongoDB", "Express", "React", "Node.js", "REST APIs", "Tailwind CSS"],
+    image: "/assets/img/image copy 2.png",
     links: {
-      github: "https://github.com/ersamirsingh/UrbanPiper",
-      demo: null,
+      github: "https://github.com/Devaraju89",
+      demo: "https://onekart-devaraju.vercel.app/",
     },
     isFlagship: true,
   },
   {
-    id: "karigar",
+    id: "pet-adoption",
     number: "02",
-    badge: null,
-    title: "Karigar",
+    badge: "2024",
+    title: "Pet Adoption Platform",
     description:
-      "A platform connecting local skilled workers with customers, featuring real-time search, worker profiles, and booking management with full database integration.",
-    techTags: ["React", "Node.js", "MongoDB", "Express", "REST API"],
+      "Designed a user-friendly adoption platform with intuitive workflows for pet discovery, adoption tracking, and donation management. Created empathetic UI with clear visual hierarchy and structured user journeys.",
+    techTags: ["MongoDB", "Express", "React", "Node.js", "User Journey", "Visual Hierarchy"],
+    image: "/assets/img/image copy 3.png",
     links: {
-      github: "https://github.com/mdyusuf0/Karigar",
-      frontendDemo: "https://karigar-frontend.onrender.com",
-      backendApi: "https://karigar-zny2.onrender.com",
+      github: "https://github.com/Devaraju89",
+      demo: "https://pet-adoption-platform-zeta.vercel.app/",
     },
     isFlagship: false,
   },
   {
-    id: "sentiment-analysis",
+    id: "ai-travel",
     number: "03",
-    badge: null,
-    title: "AI-Powered Sentiment Analysis",
+    badge: "May 2025",
+    title: "AI-Travel-Management Platform",
     description:
-      "A full-stack web application that analyzes citizen feedback using Artificial Intelligence to classify sentiments as positive, negative, or neutral. Features a responsive React frontend, a Node.js backend, MongoDB for data storage, and n8n automation for workflow orchestration — enabling real-time insights and efficient feedback management.",
-    techTags: ["React", "Node.js", "MongoDB", "n8n", "AI/ML", "REST API"],
+      "Architected a comprehensive travel platform connecting tourists with verified local guides. Designed clean, highly responsive user interfaces using Blade templates and CSS — ensuring smooth navigation and an intuitive browsing experience across all devices with a seamless automated booking experience.",
+    techTags: [
+      "Laravel (PHP)",
+      "MongoDB",
+      "JavaScript (ES6+)",
+      "Blade Templating",
+      "REST APIs",
+      "Responsive UI"
+    ],
+    image: "/assets/img/image copy 3.png",
     links: {
-      github: "#", // Update when available
+      github: "https://github.com/Devaraju89/AI-Travel-Management-Platform-",
+      demo: "https://travelmate-ai-zbq9.onrender.com/",
     },
     isFlagship: false,
   },
@@ -299,61 +291,98 @@ export const projects = [
 export const certificates = {
   featured: [
     {
-      name: "Oracle Cloud Infrastructure 2025",
-      issuer: "Oracle",
+      name: "Oracle Cloud Infrastructure 2025 AI Foundations",
+      issuer: "ORACLE · Mar 2026",
       icon: "☁️",
+      pdf: "/assets/docs/cert_nptel.pdf",
     },
     {
-      name: "Programming in Java (94%)",
-      issuer: "NPTEL",
+      name: "Responsive Web Design Certification",
+      issuer: "FreeCodeCamp · Oct 2023",
+      icon: "💻",
+      pdf: "/assets/docs/cert_freecodecamp.pdf",
+    },
+    {
+      name: "Computational Theory: Principle & Automata",
+      issuer: "INFOSYS · Aug 2025",
+      icon: "🧠",
+      pdf: "/assets/docs/cert_infosys.pdf",
+    },
+    {
+      name: "Object Oriented Programming (LPU-NEOCOLAB)",
+      issuer: "Certified · Dec 2024",
       icon: "☕",
+      pdf: "https://drive.google.com/file/d/1sOBIoOX0r2MAvt0iQSeQNEEQgyhB5KU_/view?usp=sharing",
     },
     {
-      name: "C Programming & Assembly Language",
-      issuer: "NPTEL",
+      name: "Cloud Computing",
+      issuer: "NPTEL · Apr 2025",
+      icon: "🌐",
+      pdf: "/assets/docs/cert_nptel.pdf",
+    },
+    {
+      name: "Computer Communications (4-Course Spec.)",
+      issuer: "Coursera",
+      icon: "📡",
+      pdf: "/assets/docs/cert_coursera_comm.pdf",
+    },
+    {
+      name: "Java Development",
+      issuer: "Oracle · 2024",
       icon: "⚙️",
+      pdf: "/assets/docs/cert_java.pdf",
     },
     {
-      name: "Technology Job Simulation",
-      issuer: "Deloitte",
-      icon: "💼",
+      name: "Data Structures & Algorithms",
+      issuer: "Algo-Uni · 2024",
+      icon: "⚡",
+      pdf: "/assets/docs/cert_algovuni.pdf",
     },
     {
-      name: "Career Edge – IT Primer",
-      issuer: "TCS iON",
-      icon: "🎓",
+      name: "ChatGPT-4 Prompt Engineering",
+      issuer: "AI Training",
+      icon: "🤖",
+      pdf: "/assets/docs/cert_chatgpt.pdf",
     },
     {
-      name: "Fundamentals of BI & Analytics",
-      issuer: "Lumenore",
-      icon: "📊",
+      name: "Network Comm. Fundamentals",
+      issuer: "Coursera",
+      icon: "🔌",
+      pdf: "/assets/docs/cert_network.pdf",
+    },
+    {
+      name: "Summer Training Completion",
+      issuer: "Industry Training · 2024",
+      icon: "📜",
+      pdf: "/assets/docs/cert_summer.pdf",
     },
   ],
-  viewAllUrl:
-    "https://drive.google.com/file/d/1ObdGWtVSx8SsfR4AcbCySSd9LFXcAs9f/view?usp=sharing",
+  viewAllUrl: "https://drive.google.com/file/d/16wp79DF-IcH5GykyokuTa3zTCu2UiPNZ/view?usp=drive_link",
 };
 
 export const education = {
   degree: "B.Tech – Computer Science & Engineering",
-  institution: "IES College of Technology (RGPV)",
-  cgpa: "8.35",
-  graduation: "2027",
-  twelfth: "12th Science – 81%",
-  tenth: "10th CBSE – 70%",
+  institution: "Lovely Professional University (Punjab, India)",
+  cgpa: "7.31",
+  graduation: "Present (2023 – 2027)",
+  twelfth: "Intermediate (Swami Vivekananda Junior College) – 94.7%",
+  tenth: "Matriculation (Z.P.H.S Yerragunta) – 96.6%",
 };
 
 export const footerContent = {
   taglines: [
-    "Software Engineering & Web Dev",
-    "Java · Spring Boot · React",
-    "Full Stack Applications",
+    "UI/UX Designer & Frontend Craftsman",
+    "User-Centered Interfaces · React · Figma",
+    "Crafting Intuitive Digital Experiences",
   ],
-  credential: "B.Tech CSE · CGPA 8.35",
-  copyright: `© ${new Date().getFullYear()} Md Yusuf | Built with React`,
+  credential: "B.Tech CSE · CGPA 7.31",
+  copyright: `© ${new Date().getFullYear()} Rangappa Gari Devaraju | Built with React`,
 };
 
+// FormSubmit Configuration
+export const contactFormEndpoint = "https://formsubmit.co/devarajkuruba18@gmail.com";
+
 // EmailJS Configuration
-// Will read directly from environment variables in Vite (starting with VITE_)
 export const emailjsConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_EMAILJS_SERVICE_ID",
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_EMAILJS_TEMPLATE_ID",

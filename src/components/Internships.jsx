@@ -9,7 +9,7 @@ const InternshipCard = ({ intern, index }) => (
   >
     <div>
       <div className="flex justify-between items-start mb-6">
-        <span className="text-white/40 text-xs font-mono font-bold tracking-widest uppercase">
+        <span className="text-white/60 text-xs font-mono font-bold tracking-widest uppercase">
           {intern.duration}
         </span>
         <span className="bg-white/10 text-white text-[10px] font-black tracking-widest uppercase py-1 px-3 rounded-full border border-white/15">
@@ -25,8 +25,8 @@ const InternshipCard = ({ intern, index }) => (
 
       {/* Skills gained */}
       <div className="mb-6">
-        <h4 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-2">Skills Gained:</h4>
-        <ul className="text-white/90 text-sm font-medium space-y-1 pl-4 list-disc">
+        <h4 className="text-white/70 text-xs font-bold uppercase tracking-wider mb-2">Key Highlights & Skills:</h4>
+        <ul className="text-white/90 text-sm font-medium space-y-1.5 pl-4 list-disc">
           {intern.skills.map((skill, i) => (
             <li key={i}>{skill}</li>
           ))}
@@ -36,7 +36,7 @@ const InternshipCard = ({ intern, index }) => (
 
     {/* Technologies used */}
     <div className="pt-4 border-t border-white/10">
-      <h4 className="text-white/60 text-xs font-bold uppercase tracking-wider mb-3">Technologies:</h4>
+      <h4 className="text-white/70 text-xs font-bold uppercase tracking-wider mb-3">Technologies:</h4>
       <div className="flex flex-wrap gap-2">
         {intern.tech.map((t) => (
           <span 
@@ -53,29 +53,29 @@ const InternshipCard = ({ intern, index }) => (
 
 const Internships = () => {
   return (
-    <section className="bg-[#ff2a2a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
+    <section id="experience" className="bg-[#ff2a2a] pt-28 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans">
       
-      {/* Torn paper divider at top */}
-      <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12 md:h-20 fill-[#0a0a0a]">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.62,189.5,99.8,242.79,81.82,282.88,63.6,321.39,56.44Z"></path>
+      {/* Smooth Downward Curve Top Divider (Matches Design Reference) */}
+      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-16 md:h-28 fill-[#0a0a0a]">
+          <path d="M0,0 C300,90 900,90 1200,0 L1200,0 L0,0 Z"></path>
         </svg>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-20">
+      <div className="max-w-6xl mx-auto relative z-20 pt-8">
         
-        {/* Header */}
+        {/* Header (Matching Reference Screenshot) */}
         <div data-aos="fade-up" className="mb-16 md:mb-20 text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight uppercase">
-            Work Experience
+          <h2 className="text-5xl md:text-7xl font-black text-black tracking-tight uppercase mb-4 leading-none">
+            WORK EXPERIENCE
           </h2>
-          <p className="text-red-100 text-base md:text-lg font-semibold max-w-lg mx-auto">
+          <p className="text-white text-lg md:text-xl font-bold max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
             Practical internships where I applied engineering principles and built real-world assets.
           </p>
         </div>
 
         {/* Internship Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {internshipsList.map((intern, index) => (
             <InternshipCard key={intern.organization} intern={intern} index={index} />
           ))}
