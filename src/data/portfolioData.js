@@ -281,8 +281,8 @@ export const projects = [
     ],
     image: "/assets/img/travelmate.png",
     links: {
-      github: "https://github.com/Devaraju89/AI-Travel-Management-Platform-",
-      demo: "https://travelmate-ai-zbq9.onrender.com/",
+      github: "https://github.com/Devaraju89/travelmate-ai",
+      demo: "https://travelmate-ai-production-a071.up.railway.app/",
     },
     isFlagship: false,
   },
